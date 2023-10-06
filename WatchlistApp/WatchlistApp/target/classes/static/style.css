@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    /* background: url(https://preview.redd.it/how-can-someone-make-this-background-with-html-and-css-i-v0-zjgs096khv591.jpg?auto=webp&s=9659527da9196c27a8875200b41d20a8e901c341); */
+    /* background-size: cover; */
+    background: linear-gradient(to right, #21212166, #212121);
+    /* background-color: #21212133; */
+    color: aliceblue;
+    /* background-blend-mode: color-dodge; */
+}
+/* .outer-box {
+    /* position: relative; */
+    background-color: #212121;
+    width: 100%;
+    height: 100%;
+} */
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-variant: small-caps;
+}
+.form {
+    /* background-color: #212121; */
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    border-radius: 8px;
+    background: linear-gradient(to top right, #21212133, #ffffff11);
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(5px);
+}
+label {
+    display: block;
+    margin-inline-end: 5px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.field {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+textarea {
+    height: 40px;
+}
+.form-field {
+    margin-block: 15px;
+}
+.btn {
+    width: 100%;
+    padding: 7px;
+    border-radius: 8px;
+    border: none;
+    background-color: grey;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.btn:hover {
+    background-color: #212121;
+    color: whitesmoke;
+}
+.link-list{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 15px;
+    padding-inline: 30px;
+    border-radius: 8px;
+    /* background: linear-gradient(to top right, #21212133, #ffffff11); */
+    /* backdrop-filter: blur(5px); */
+    width: fit-content;
+}
+.link-items {
+
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    /* transition: 0.2s ease-out; */
+}
+a::before {
+    content: '';
+    width: 0%;
+    position: absolute;
+    height: 2px;
+    top: -10px;
+    display: block;
+    background-color: #fff;
+    transition: all ease-in-out 250ms;
+}
+a:hover::before {
+    width: 100%;
+}
+/* .link-items:hover {
+    backdrop-filter: blur(50px);
+
+} */
+.link-items a{
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #212121, #21212133);
+    z-index: 2;
+}
+.c1 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+.c2 {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
